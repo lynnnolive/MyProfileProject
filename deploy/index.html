@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <section id="title" class="p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">NAZ.DEV</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#favorites">Favorites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#education">Education</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 animate-up">
+          <h1 class="display-3" style="background: linear-gradient(to right, #4b0082, #e0b0ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent;">Creative Developer & Problem Solver</h1>
+            <p class="lead mb-4">
+              I build immersive, high-performance web experiences that combine state-of-the-art design with robust
+              engineering. Welcome to my personal portolio.
+            </p>
+            <div class="d-flex gap-3">
+              <a href="#skills" class="btn btn-primary btn-lg px-4 rounded-pill"
+                style="background: var(--accent-color); border: none;">View Skills</a>
+              <a href="#favorites" class="btn btn-outline-light btn-lg px-4 rounded-pill" style="color: #4b0082 !important;">Explore Favorites</a>
+            </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block animate-up" style="animation-delay: 0.2s;">
+          <div class="glass p-2">
+            <img src="images/hero_background.png" alt="Hero Background" class="img-fluid rounded-4 shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="container text-center animate-up">
+    <h2>About Me</h2>
+    <p class="text-muted mx-auto" style="max-width: 800px;">
+      Passionate about crafting clean code and elegant user interfaces. I specialize in front-end development,
+      focusing on creating seamless digital experiences that delight users.
+    </p>
+  </section>
+
+  <section id="skills" class="bg-light-subtle">
+    <div class="container">
+      <h2 class="animate-up">Modern Skillset</h2>
+      <div class="row g-4">
+        <div class="col-md-4 animate-up" style="animation-delay: 0.1s;">
+          <div class="card glass">
+            <div class="card-body">
+              <h4 class="card-title mb-3">Front-End Development</h4>
+              <p class="card-text text-muted">Building responsive and interactive web applications using React, Vue, and
+                modern JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 animate-up" style="animation-delay: 0.2s;">
+          <div class="card glass">
+            <div class="card-body">
+              <h4 class="card-title mb-3">UI/UX Design</h4>
+              <p class="card-text text-muted">Designing intuitive user interfaces with a focus on usability,
+                accessibility, and high-end aesthetics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 animate-up" style="animation-delay: 0.3s;">
+          <div class="card glass">
+            <div class="card-body">
+              <h4 class="card-title mb-3">Back-End Logic</h4>
+              <p class="card-text text-muted">Designing scalable server-side systems and efficient databases to power
+                complex applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="favorites">
+    <div class="container">
+      <h2 class="animate-up">Personal Favorites</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col animate-up" style="animation-delay: 0.1s;">
+          <div class="card glass shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Food & Drink</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Favorite Food:</strong> Sushi</li>
+                <li class="list-group-item"><strong>Favorite Drink:</strong> Matcha</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col animate-up" style="animation-delay: 0.2s;">
+          <div class="card glass shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-success">Entertainment</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Favorite Movie:</strong> Inception</li>
+                <li class="list-group-item"><strong>Favorite Song:</strong> Love Me Harder</li>
+                <li class="list-group-item"><strong>Favorite Game:</strong> Valorant</li>
+                <li class="list-group-item"><strong>Favorite Book:</strong> Dune</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col animate-up" style="animation-delay: 0.3s;">
+          <div class="card glass shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title text-info">Interests</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>Favorite Place:</strong> Kyoto</li>
+                <li class="list-group-item"><strong>Favorite Animal:</strong> Wolf</li>
+                <li class="list-group-item"><strong>Favorite Flower:</strong> Cherry Blossom</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5 animate-up" style="animation-delay: 0.5s;">
+        <blockquote class="blockquote">
+          <p class="mb-0 fs-3">"Code is like humor. When you have to explain it, it’s bad."</p>
+          <footer class="blockquote-footer mt-2 text-muted">Cory House</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="education"></section>
+
+  <footer id="footer" class="py-5 text-center border-top border-secondary">
+    <div class="container">
+      <p class="text-muted mb-0">&copy; 2024 NAZ.DEV. Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
