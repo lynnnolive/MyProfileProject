@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap');
 
 :root {
-    --primary-bg: #0a0b1e;
-    --accent-color: #6366f1;
-    --accent-glow: rgba(99, 102, 241, 0.4);
+    --primary-bg: #0f172a;
+    --accent-color: #14b8a6;
+    --accent-secondary: #10b981;
+    --accent-glow: rgba(20, 184, 166, 0.4);
     --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --glass-bg: rgba(30, 41, 59, 0.7);
+    --text-muted: #e2e8f0;
+    --glass-bg: rgba(30, 41, 59, 0.85);
     --glass-border: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
 }
 
 * {
@@ -69,14 +78,14 @@ body {
     align-items: center;
     position: relative;
     padding: 100px 0;
-    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent),
-        radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.15), transparent);
+    background: radial-gradient(circle at top right, rgba(20, 184, 166, 0.15), transparent),
+        radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.15), transparent);
 }
 
 .hero h1 {
     font-size: 4rem;
     font-weight: 800;
-    background: linear-gradient(to right, #fff, var(--accent-color));
+    background: linear-gradient(to right, var(--accent-color), var(--accent-secondary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
